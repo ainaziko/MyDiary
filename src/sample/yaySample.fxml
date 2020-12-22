@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="570.0" prefWidth="700.0" style="-fx-background-color: #4a4a4a;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Yay">
+   <children>
+      <TableView fx:id="listOfRecords" layoutX="-2.0" layoutY="15.0" prefHeight="555.0" prefWidth="188.0" stylesheets="@stylesheets/tableStyle.css">
+        <columns>
+          <TableColumn fx:id="noteTitlesColumn" maxWidth="187.0" minWidth="187.0" prefWidth="187.0" resizable="false" sortType="DESCENDING" text="titles" />
+            <TableColumn fx:id="idCol" maxWidth="0.0" minWidth="0.0" prefWidth="0.0" resizable="false" sortType="DESCENDING" text="id" visible="false" />
+            <TableColumn fx:id="noteCol" maxWidth="0.0" minWidth="0.0" prefWidth="0.0" resizable="false" sortType="DESCENDING" text="Notes" visible="false" />
+        </columns>
+      </TableView>
+      <TextArea fx:id="textArea" layoutX="185.0" layoutY="74.0" prefHeight="496.0" prefWidth="515.0" promptText=" Type your thoughts" scrollLeft="57.0">
+         <font>
+            <Font name="BiauKai" size="16.0" />
+         </font></TextArea>
+      <HBox prefHeight="42.0" prefWidth="700.0" style="-fx-background-color: #4a4a4a;">
+         <children>
+            <Button fx:id="deleteButton" disable="true" mnemonicParsing="false" prefHeight="27.0" prefWidth="65.0" style="-fx-background-color: #707070;" text="Delete" textFill="#f8f8f8">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="10.0" right="5.0" top="7.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="newButton" mnemonicParsing="false" prefHeight="27.0" prefWidth="65.0" style="-fx-background-color: #707070;" text="New" textFill="#f8f8f8">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="7.0" />
+               </HBox.margin>
+            </Button>
+            <Pane prefHeight="42.0" prefWidth="472.0" />
+            <Button fx:id="logOutButton" mnemonicParsing="false" prefHeight="27.0" prefWidth="65.0" style="-fx-background-color: #707070;" text="Log Out" textFill="#f8f8f8">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="10.0" top="7.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <TextField fx:id="title" layoutX="185.0" layoutY="42.0" prefHeight="32.0" prefWidth="515.0" promptText="Title">
+         <font>
+            <Font name="BiauKai" size="18.0" />
+         </font></TextField>
+   </children>
+</AnchorPane>
