@@ -31,3 +31,7 @@ There are 3 scenes: authorisation, registration and main. Animations are also in
 
 
 ![alt text](https://sun9-25.userapi.com/impg/xnXU-gnaO8kJGK692yaHV_6lskty91ijMFdx9Q/OmJqckVryAM.jpg?size=2560x670&quality=96&proxy=1&sign=f11488c4004d6fb7fad75ce6d5d1c8f1&type=album)
+
+Team members:
+Ainazik Momunalieva,
+Tilek Kenzhaev.
