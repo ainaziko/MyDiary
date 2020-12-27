@@ -151,7 +151,7 @@ public class Yay extends SignInController{
     public Connection getConnection(){
         Connection conn;
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/db", "root","Asadjioli0");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/db", "root","");
             return conn;
         } catch (SQLException throwables) {
             throwables.printStackTrace();
